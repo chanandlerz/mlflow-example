@@ -15,25 +15,6 @@ env:
   L1_RATIO: 0.5
   RANDOM_STATE: 42
 
-sebelah kanan sesuai dengan kebutuhan proyek. Namun, saat ini kita tidak akan menggunakan fitur tersebut karena akan membuat Actions secara mandiri melalui kode berikut.
-
-name: CI MLflow
- 
-on:
-  push:
-    branches:
-      - master
-  pull_request:
-    branches:
-      - master
- 
-env:
-  CSV_URL: "Project/wine-quality.csv"
-  TARGET_VAR: "quality"
-  ALPHA: 0.5
-  L1_RATIO: 0.5
-  RANDOM_STATE: 42
- 
 jobs:
   build:
     runs-on: ubuntu-latest
